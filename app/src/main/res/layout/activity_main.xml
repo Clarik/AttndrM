@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgColor"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+
+        >
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/attndr_title"
+
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/colorBlack"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="Welcome"
+            android:id="@+id/tvWelcomeBackUserTxt"
+
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+
+            >
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="40dp"
+            >
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight=".30"
+                android:src="@drawable/qr_logo"
+                android:layout_gravity="center_vertical"
+                >
+            </ImageView>
+            <Button
+                android:layout_weight=".70"
+                android:layout_gravity="center"
+                android:id="@+id/btn_join_an_event"
+                style="@style/button_"
+                android:text="@string/join_event"
+
+                android:background="@drawable/rounded_corners2"
+                >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight=".30"
+                android:src="@drawable/profile_logo"
+                android:layout_gravity="center_vertical"
+                >
+            </ImageView>
+            <Button
+                android:layout_weight=".70"
+                android:layout_gravity="center"
+                android:id="@+id/btn_edit_name"
+                style="@style/button_"
+                android:text="@string/edit_name"
+                android:background="@drawable/rounded_corners"
+                >
+            </Button>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

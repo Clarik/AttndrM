@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/bgColor"
+    android:orientation="vertical"
+    tools:context=".EditName">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+        >
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/attndr_title"
+
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/colorBlack"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="EditName"
+
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+
+            >
+        </TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/txt_name_holder"
+            >
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/btn_edit_name"
+                android:layout_weight="0.5"
+                style="@style/button_"
+                android:text="@string/edit"
+                android:background="@drawable/rounded_corners"
+                android:layout_marginRight="10dp"
+                />
+
+            <Button
+                android:id="@+id/btn_back_to_home"
+                android:layout_weight="0.5"
+                style="@style/button_"
+                android:text="@string/back"
+                android:background="@drawable/rounded_corners2"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">AttndrMobile</string>
+
+    <string name="attndr_title">Attndr.</string>
+    <string name="join_event">Join an Event</string>
+    <string name="edit_name">Edit Name</string>
+
+    <string name="edityourname">Edit Your Name</string>
+    <string name="edit">Edit</string>
+    <string name="back">Back</string>
+
+
+    <string name="logout">Log Out</string>
+    <string name="logged_in">You\'re logged in as</string>
+    <string name="event_name">Event Name</string>
+    <string name="speaker_name">Speaker Name</string>
+    <string name="location">Location</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="login_time">Login Time</string>
+
+
+
+</resources>

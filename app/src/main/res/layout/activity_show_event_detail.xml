@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowEventDetail"
+    android:background="@color/bgColor"
+    android:padding="16dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="40dp"
+        >
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/attndr_title"
+
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/colorBlack"
+            >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+                android:id="@+id/EventDetail"
+
+                >
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    >
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        >
+
+                        <TextView
+                            style="@style/EventText.Field"
+                            android:text="@string/logged_in"
+                            >
+                        </TextView>
+
+                        <TextView
+                            style="@style/EventText.Field"
+                            android:text=":"
+                            >
+                        </TextView>
+
+                        <TextView
+                            style="@style/EventText.Value"
+                            android:text=""
+                            android:id="@+id/tveUsername"
+                            >
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        >
+
+                        <TextView
+                            style="@style/EventText.Field"
+                            android:text="@string/event_name"
+                            >
+                        </TextView>
+
+                        <TextView
+                            style="@style/EventText.Field"
+                            android:text=":"
+                            >
+                        </TextView>
+
+                        <TextView
+                            style="@style/EventText.Value"
+                            android:text=""
+                            android:id="@+id/tveName"
+                            >
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        >
+
+                        <TextView
+                            style="@style/EventText.Field"
+                            android:text="@string/speaker_name"
+                            >
+                        </TextView>
+
+                        <TextView
+                            style="@style/EventText.Field"
+                            android:text=":"
+                            >
+                        </TextView>
+
+                        <TextView
+                            style="@style/EventText.Value"
+                            android:text=""
+                            android:id="@+id/tveSpeakerName"
+                            >
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        >
+
+                        <TextView
+                            style="@style/EventText.Field"
+                            android:text="@string/location"
+                            >
+                        </TextView>
+
+                        <TextView
+                            style="@style/EventText.Field"
+                            android:text=":"
+                            >
+                        </TextView>
+
+                        <TextView
+                            style="@style/EventText.Value"
+                            android:text=""
+                            android:id="@+id/tveLocation"
+                            >
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        >
+
+                        <TextView
+                            style="@style/EventText.Field"
+                            android:text="@string/date"
+                            >
+                        </TextView>
+
+                        <TextView
+                            style="@style/EventText.Field"
+                            android:text=":"
+                            >
+                        </TextView>
+
+                        <TextView
+                            style="@style/EventText.Value"
+                            android:text=""
+                            android:id="@+id/tveDate"
+                            >
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        >
+
+                        <TextView
+                            style="@style/EventText.Field"
+                            android:text="@string/time"
+                            >
+                        </TextView>
+
+                        <TextView
+                            style="@style/EventText.Field"
+                            android:text=":"
+                            >
+                        </TextView>
+
+                        <TextView
+                            style="@style/EventText.Value"
+                            android:text=""
+                            android:id="@+id/tveTime"
+                            >
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        >
+
+                        <TextView
+                            style="@style/EventText.Field"
+                            android:text="@string/login_time"
+                            >
+                        </TextView>
+
+                        <TextView
+                            style="@style/EventText.Field"
+                            android:text=":"
+                            >
+                        </TextView>
+
+                        <TextView
+                            style="@style/EventText.Value"
+                            android:text=""
+                            android:id="@+id/tveLoginTime"
+                            >
+                        </TextView>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    >
+
+                </LinearLayout>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="@string/logout"
+                    android:background="@drawable/rounded_corners"
+                    style="@style/button_"
+                    android:id="@+id/btn_eLogOut"
+                    >
+                </Button>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
